@@ -1,0 +1,65 @@
+:root {
+  --baseFontColor: #000;
+  --linkColor: #b5ffe1;
+  --linkHoverColor: #45f0df;
+  --linkActiveColor: #45f0df;
+}
+
+::selection {
+  background: #45f0df;
+  color: #000;
+}
+
+.nav-main {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-main li {
+  margin-bottom: 0;
+}
+
+.nav-main li h2 a {
+  margin: 0;
+  margin: 0 0.8rem;
+  /* font-size: 1.4rem; */
+}
+
+/* .nav-main .menu-link a {
+  text-decoration: none;
+} */
+
+.nav-main .menu-link a {
+  color: var(--baseFontColor);
+  /* font-weight: 200; */
+  transition: color .1s linear;
+}
+
+.nav-main a:hover {
+  color: var(--linkHoverColor);
+  /* text-decoration: underline; */
+  /* font-weight: 400; */
+}
+
+.page--index * {
+  color: var(--baseFontColor);
+}
+
+.page--index h1 {
+  font-weight: 400;
+  margin: 50px 0;
+}
+
+.page--index h2 {
+  margin: 30px 0;
+}
+
+footer {
+  color: var(--baseFontColor);
+}
+
+.blog-post> *{
+  color: var(--baseFontColor);
+}
